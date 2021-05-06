@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- Title -->
+      <h2 class="container__title">Guessing Game</h2>
+
+      <!-- Main game UI -->
+      <div class="game">
+        <!-- Game Instruction -->
+        <p class="game__instruction">
+          Guess the number between <br />
+          <span class="min"></span> to
+          <span class="max"></span>
+        </p>
+
+        <!-- Game Number Input -->
+        <div class="game__input">
+          <input type="number" id="game-input-number" />
+          <button class="" id="game-button">Submit</button>
+        </div>
+
+        <!-- Game Submit Number -->
+        <div class="game__result">
+          <p class="game__output"></p>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div class="loading">
+        <img src="./img/loading.gif" alt="" />
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-bar"></div>
+    </section>
+
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
